@@ -1,0 +1,11 @@
+language: java
+jdk:
+  -oraclejdk11
+script: ant build
+
+deploy:
+  - provider: s3
+    access_key_id: $AKIAYNKEGK6BZTWVEIZZ
+    secret_access_key : $42hZ6oCWSq7dUYNe6/zTdSAVpPRz/sCAD5EZY42H
+    bucket: 'task1'
+    skip_cleanup: true
